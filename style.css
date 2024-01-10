@@ -1,0 +1,286 @@
+  @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono');
+
+*{
+  margin: 0%;
+  padding: 0%;
+}
+
+:root{
+  --black: #000000;
+  --darkgrey: #A9A9A0;
+  --lightgray: #D3D3D3;
+  --silver: #c0c0c0;
+  --white: #ffffff;
+  --grey: #808080;
+}
+
+::-webkit-scrollbar{
+  width: 10px;
+}
+
+::-webkit-scrollbar-track{
+  background: var(--darkgrey);
+}
+
+::-webkit-scrollbar-thumb{
+  background: var(--silver);
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background: var(--lightgray);
+}
+
+body{
+  background-color: var(--darkgrey);
+  height: 100vh;
+  font-family: 'IBM Plex Mono';
+} 
+
+header{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: .2rem;
+  background-color: var(--silver);
+  min-height:20px;
+} 
+
+.box-img-header{
+  height: 100%;
+}
+
+.img-logo{
+  max-width: 200px;
+  height: 100%;
+} 
+
+nav{
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+} 
+.nav-links{
+  text-decoration: none;
+  color: var(--white);
+}
+
+.nav-links:hover{
+  color: var(--darkgrey);
+  transition: .4s;
+  text-decoration: underline;
+} 
+
+.box-btn-action{
+  display: flex;
+  gap: .5rem;
+} 
+
+button{
+  padding: .5rem;
+  font-size: .7rem;
+  border-radius: 11px;
+  cursor: pointer;
+}
+
+.btn-action{
+  background-color: transparent;
+  border: 3px solid var(--darkgrey);
+  color: var(--darkgrey);
+} 
+.btn-action:hover{
+  background-color: var(--black);
+  border: 3px solid var(--white);
+  transition: 1s;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+} 
+
+section{
+  padding: 4rem;
+}
+
+.first-section{
+  display: flex;
+  justify-content: space-evenly;
+  gap: 2rem;
+  flex-wrap: wrap;
+  align-items: center;
+  min-height: 650px;
+} 
+
+.first-section > div{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  min-width: 300px;
+} 
+
+h1{
+  font-size: 4rem;
+  color: var(--lightgray);
+  letter-spacing: 8px;
+}
+
+strong{
+  color: var(--silver);
+}
+
+.first-section p{
+  color: var(--black); 
+}
+
+p > strong{
+  color: var(--white);
+} 
+
+:is(button,.link-action){
+  padding: .5rem;
+  font-size: .7rem;
+  border-radius: 11px;
+  cursor: pointer;
+} 
+
+.link-action{
+  text-decoration: none;
+  width: 200px;
+  text-align: center; 
+  background-color: transparent;
+  border: 3px solid var(--lightgray);
+  color: var(--lightgray);
+}
+
+.link-action:hover{
+  background-color: var(--black);
+  border: 3px solid var(--white);
+  transition: 1s; 
+}
+
+.box-img-main{
+  max-width: 350px;
+  padding: .1rem;
+  border-radius: 11px; 
+}
+
+.img-profile{
+  border-radius: 50%;
+  width: 100%;
+}
+
+
+:is(.second-section, .fourth-section){
+  background-color: var(--lightgray);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.second-section ul{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.second-section ul li{
+  color: var(--grey);
+  letter-spacing: 2px;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.second-section ul li:hover{
+  color: var(--silver);
+  transition: .4s;
+  cursor: default;
+}
+
+
+.title{
+  color: var(--grey);
+}
+
+
+.icon-logo{
+  list-style: none;
+  pointer-events: all;
+  display: flex;
+  width: 5%;
+  gap: 10rem;
+  align-items: center;
+  flex-wrap: wrap; 
+}
+
+.third-section{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.third-section > div{
+  display: flex;
+  gap: 4rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.third-section > div img{
+  width: 250px;
+  border-radius: 10px;
+}
+
+.third-section > div p{
+  max-width: 600px;
+  color: var(--lightgray);
+  text-align: justify;
+}
+footer{
+  
+  padding: 4rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+footer > div{
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+} 
+
+#my-projects-list{
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+#my-projects-list a{
+  text-decoration: none;
+  color: var(--white);
+}
+
+#my-projects-list a:hover{
+  color: var(--darkgrey);
+  transition: 4s;
+  cursor: pointer;
+} 
+
+:is(.img-profile, .img-who-am-i){
+  box-shadow: 1px 1px 1px 1px var(--grey);
+}
